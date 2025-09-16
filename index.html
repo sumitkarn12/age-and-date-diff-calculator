@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age & Date Difference Calculator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container center">
+        <div class="calculator-container">
+            <h1>Age & Date Difference Calculator</h1>
+            <p>Choose a mode to get started.</p>
+
+            <div class="mode-selector">
+                <label>
+                    <input type="radio" name="mode" value="age" checked />
+                    <span>Age Calculator</span>
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="difference" />
+                    <span>Date Difference</span>
+                </label>
+            </div>
+
+            <div class="mode-content-wrapper">
+                <div id="age-mode" class="mode-content">
+                    <div class="input-group">
+                        <label for="dob-input">Your Date of Birth:</label>
+                        <input type="text" id="dob-input" placeholder="Click to select a date" />
+                    </div>
+                </div>
+
+                <div id="difference-mode" class="mode-content" style="display: none;">
+                    <div class="mode-content-inline">
+                        <div class="input-group">
+                            <label for="from-date-input">Start Date:</label>
+                            <input type="text" id="from-date-input" placeholder="Click to select a date" />
+                        </div>
+                        <div class="input-group">
+                            <label for="to-date-input">End Date:</label>
+                            <input type="text" id="to-date-input" placeholder="Click to select a date" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-box" id="result-box">
+                <p id="result-message"></p>
+                <p id="result-text"></p>
+                <div class="age-details">
+                    <span id="years-span" class="age-value">0</span> <span id="years-text">years</span>,
+                    <span id="months-span" class="age-value">0</span> <span id="months-text">months</span>, and
+                    <span id="days-span" class="age-value">0</span> <span id="days-text">days</span>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="diamond"></div>
+    </div>
+
+    <div class="container center link-wrapper">
+        <div class="links block-link">
+            <a href="#">Quote Generator</a>
+            <a href="#">Screen Recorder</a>
+            <a href="#">"Where Am I?" Geolocation Tool</a>
+            <a href="#">Secured Password Generator</a>
+            <a href="#">What's My IP Address?</a>
+            <a href="#">Color Palette Generator from Image</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
