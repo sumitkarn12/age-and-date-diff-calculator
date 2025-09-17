@@ -4,7 +4,7 @@
 .mode-selector span { display: block; cursor: pointer; padding: 0.7rem 1.5rem; transition: all 0.5s ease; height: 100%; align-content: center; text-align: center; }
 .mode-selector input[type="radio"] { display: none; }
 .mode-selector input[type="radio"]:checked+span { color: var(--text-color); background-color: var(--primary-color); }
-.mode-selector input[type="radio"]:hover+span { background-color: #7bbbff; }
+.mode-selector input[type="radio"]:hover+span { background-color: var(--secondary-color); }
 .mode-content { animation: fadeIn 0.5s ease-in-out; gap: 12px; }
 
 @keyframes fadeIn {
@@ -19,6 +19,7 @@ input[type="date"] {
   padding: 0.8rem;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
+  background-color: var(--light-color);
   color: var(--primary-color);
 }
 
@@ -40,6 +41,6 @@ input[type="date"] {
 }
 
 .age-value {
-  color: #007BFF;
+  color: var(--secondary-color);
   font-size: 1.5rem;
 }
