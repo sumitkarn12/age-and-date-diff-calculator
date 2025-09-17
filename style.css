@@ -1,182 +1,42 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  background-color: #f0f0f0;
-  transition: background-color 0.3s ease;
-}
-
-.calculator-container {
-  background-color: #fff;
-  padding: 2rem;
-  transition: all 0.3s ease;
-}
-
-/* Desktop and Tablet Styles */
-@media (min-width: 768px) {
-  .container {
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .calculator-container {
-    background-color: #fff;
-    padding: 2rem;
-    text-align: center;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    width: 90%;
-    max-width: 600px;
-    min-height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .links a {
-    width: 25%!important;
-  }
-}
-
-.links-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3rem;
-  width: 90%;
-  max-width: 600px;
-}
-.links a {
-  cursor: pointer;
-  color: #0080ff;
-  padding: 0.7rem 1.5rem;
-  text-align: left;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 12px;
-  width: 100%;
-  transition: all 0.2s ease;
-}
-.links a:hover {
-  background-color: #0080ff;
-  color: #fff;
-}
-
-h1 {
-  color: #333;
-  font-size: 22px;
-}
-
-p {
-  color: #555;
-}
-
 /* Mode Selector Styling */
-.mode-selector {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-.mode-selector label {
-  width: 100%;
-}
-
-.mode-selector span {
-  width: 100%;
-  display: block;
-  box-sizing: border-box;
-  cursor: pointer;
-  background-color: #e9ecef;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  transition: all 0.2s ease;
-  border: 1px solid #dee2e6;
-  text-align: center;
-}
-
-.mode-selector input[type="radio"] {
-  display: none;
-}
-
-.mode-selector input[type="radio"]:checked+span {
-  color: #fff;
-  background-color: #007BFF;
-  border-color: #007BFF;
-}
-
-.mode-selector input[type="radio"]:hover+span {
-  background-color: #7bbbff;
-  border-color: #0056b3;
-  transform: translateY(-2px);
-}
-
-.mode-selector input[type="radio"]:checked+span:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
-.mode-content {
-  animation: fadeIn 0.5s ease-in-out;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 1rem;
-}
+.mode-selector { display: flex; border-radius: 5px; overflow: hidden; border: 1px solid var(--primary-color); }
+.mode-selector label { width: 100%; padding: 0; }
+.mode-selector span { display: block; cursor: pointer; padding: 0.7rem 1.5rem; transition: all 0.5s ease; height: 100%; align-content: center; text-align: center; }
+.mode-selector input[type="radio"] { display: none; }
+.mode-selector input[type="radio"]:checked+span { color: var(--text-color); background-color: var(--primary-color); }
+.mode-selector input[type="radio"]:hover+span { background-color: #7bbbff; }
+.mode-content { animation: fadeIn 0.5s ease-in-out; gap: 12px; }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 .input-group{ flex: 1; }
-.input-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  text-align: left;
-}
+.input-group label { display: block; font-weight: bold; }
 
 input[type="date"] {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
-  box-sizing: border-box;
+  color: var(--primary-color);
 }
 
 .result-box {
   display: none;
   padding: 1.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
-  background-color: #f9f9f9;
 }
 
 #result-message {
-  color: #dc3545;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
 .age-details {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
-  line-height: 1.5;
 }
 
 .age-value {
