@@ -13,7 +13,8 @@
 		content="Curious about your exact age? Use our simple and fun age calculator to find out your age down to the second.">
 	<meta property="og:url" content="https://age-calculator.idkey.in/">
 	<meta property="og:type" content="website">
-<meta property="og:image" content="https://og.tailgraph.com/og?title=Age%20Calculator%20Online&titleTailwind=text-4xl%20font-bold%20text-gray-800%20leading-tight&text=Find%20out%20your%20exact%20age%20in%20years%2C%20months%2C%20days%21%20Our%20fun%20online%20age%20calculator%20helps%20you%20discover%20how%20old%20you.&textTailwind=text-xl%20text-gray-600%20mt-2&bgTailwind=bg-gradient-to-tr%20from-cyan-500%20to-blue-500" />
+	<meta property="og:image"
+		content="https://og.tailgraph.com/og?title=How%20old%20are%20you%3F&text=A%20calculator%20helps%20you%20discover%20how%20old%20are%20you%20in%20years%2C%20month%20and%20days.&bgUrl=https%3A%2F%2Fi.postimg.cc%2FZnrvH8wP%2Fage-calculator.jpg&titleFontFamily=Inter&bgTailwind=bg-no-repeat%20bg-cover&titleTailwind=text-6xl%20text-white%20font-black%20text-left%20px-16&textFontFamily=Josephine%20Sans&textTailwind=text-5xl%20text-white%20text-left%20px-16&overlay=1&containerTailwind=p-16" />
 
 	<link rel="shortcut icon" href="https://age-calculator.idkey.in/favicon.svg" type="image/x-icon">
 	<link rel="stylesheet" href="https://age-calculator.idkey.in/core.css" />
@@ -29,13 +30,13 @@
 
 			<div class="mode-selector">
 				<label>
-          <input type="radio" name="mode" value="age" checked/>
-          <span>Age Calculator</span>
-        </label>
+					<input type="radio" name="mode" value="age" checked />
+					<span>Age Calculator</span>
+				</label>
 				<label>
-          <input type="radio" name="mode" value="difference" />
-          <span>Date Difference</span>
-        </label>
+					<input type="radio" name="mode" value="difference" />
+					<span>Date Difference</span>
+				</label>
 			</div>
 
 			<div class="mode-content-wrapper">
@@ -43,49 +44,49 @@
 					<div class="input-group">
 						<label for="dob-input">Your Date of Birth:</label>
 						<input type="date" id="dob-input" placeholder="Click to select a date" />
-          </div>
-					</div>
-
-					<div id="difference-mode" class="mode-content" style="display: none;">
-						<div class="input-group">
-							<label for="from-date-input">Start Date:</label>
-							<input type="date" id="from-date-input" placeholder="Click to select a date" />
-          </div>
-							<div class="input-group">
-								<label for="to-date-input">End Date:</label>
-								<input type="date" id="to-date-input" placeholder="Click to select a date" />
-          </div>
-							</div>
-						</div>
-
-						<div class="result-box" id="result-box">
-							<p id="result-message"></p>
-							<p id="result-text"></p>
-							<div class="age-details">
-								<span id="years-span" class="age-value">0</span> <span id="years-text">years</span>,
-								<span id="months-span" class="age-value">0</span> <span id="months-text">months</span>,
-								and
-								<span id="days-span" class="age-value">0</span> <span id="days-text">days</span>.
-							</div>
-						</div>
 					</div>
 				</div>
 
-				<div class="center">
-					<div class="links">
-						<a href="http://age-calculator.idkey.in/">Age and Date Calculator</a>
-						<a href="https://dialogue.idkey.in/">Movie Dialogues</a>
-						<a href="http://record.idkey.in/">Screen Recorder</a>
-						<a href="https://digipin.idkey.in/">DIGIPIN</a>
-						<a href="https://pass.idkey.in/">Secured Password Generator</a>
-						<a href="https://ip.idkey.in/">What's My IP Address?</a>
-						<a href="http://palette.idkey.in/">Color Palette Generator from Image</a>
+				<div id="difference-mode" class="mode-content" style="display: none;">
+					<div class="input-group">
+						<label for="from-date-input">Start Date:</label>
+						<input type="date" id="from-date-input" placeholder="Click to select a date" />
+					</div>
+					<div class="input-group">
+						<label for="to-date-input">End Date:</label>
+						<input type="date" id="to-date-input" placeholder="Click to select a date" />
 					</div>
 				</div>
+			</div>
 
-				<script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
-				<script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
-				<script src="/script.js"></script>
+			<div class="result-box" id="result-box">
+				<p id="result-message"></p>
+				<p id="result-text"></p>
+				<div class="age-details">
+					<span id="years-span" class="age-value">0</span> <span id="years-text">years</span>,
+					<span id="months-span" class="age-value">0</span> <span id="months-text">months</span>,
+					and
+					<span id="days-span" class="age-value">0</span> <span id="days-text">days</span>.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="center">
+		<div class="links">
+			<a href="http://age-calculator.idkey.in/">Age and Date Calculator</a>
+			<a href="https://dialogue.idkey.in/">Movie Dialogues</a>
+			<a href="http://record.idkey.in/">Screen Recorder</a>
+			<a href="https://digipin.idkey.in/">DIGIPIN</a>
+			<a href="https://pass.idkey.in/">Secured Password Generator</a>
+			<a href="https://ip.idkey.in/">What's My IP Address?</a>
+			<a href="http://palette.idkey.in/">Color Palette Generator from Image</a>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
+	<script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
+	<script src="/script.js"></script>
 </body>
 
 </html>
